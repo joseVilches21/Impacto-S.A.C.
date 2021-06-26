@@ -1,0 +1,673 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CACACA;
+    overflow-x: hidden;
+}
+
+nav{
+    height: 120px;
+    background-color: #003955;
+}
+
+.logo{
+    display: inline-block;
+}
+.logo a img{
+    position: relative;
+    top: -2px;
+    left: -66px;
+    padding-top: 15px;
+    width: 450px;
+    height: 95px;
+}
+
+.telollevamosacasa{
+    position: relative;
+    top: -120px;
+    left: 300px;
+    display: flex;
+    padding: 15px;
+}
+.telollevamosacasa img{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+.telollevamosacasa p{
+    color: #fff;
+}
+
+.buscar{
+    position: relative;
+    display: flex;
+    top: -180px;
+    left: 710px;
+    border-radius: 10px;
+    height: 20px;
+    width: 300px;
+    padding: 2px;
+    padding-left: 10px;
+}
+.buscar{
+    background-image: url("Imágenes/Buscar.jpg");
+    background-position: right;
+    background-size: 22px;
+    background-repeat: no-repeat;
+}
+.buscar::placeholder{
+    color: #000
+}
+
+.Usuario{
+    position: relative;
+    display: inline;
+    top: -220px;
+    left: 1140px;
+}
+.Usuario p{
+    display: inline-flex;
+    padding: 8px;
+    position: relative;
+    top: 20px;
+    left: -80px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #CACACA;
+    text-align: center;
+    font-size: 15px;
+}
+
+.Carrito{
+    position: relative;
+    display: inline;
+    top: -232px;
+    left: 1095px;
+}
+.Carrito p{
+    display: inline-flex;
+    padding: 8px;
+    position: relative;
+    top: 25px;
+    left: -60px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #CACACA;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu{
+    position: relative;
+    top: -310px;
+    left: 17px;
+}
+.menu ul{
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    color: #fff;
+    display: block;
+    padding: 36px;
+    padding-right: 24px;
+    text-decoration: none;
+}
+
+.categorias{
+    margin: 15px;
+}
+.categorias p{
+    margin: 15px;
+    font-size: 20px;
+}
+.menu-categorias ul li a{
+    font-size: 17px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nuevos-productos{
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 5px;
+    top: -315px;
+    left: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 74%;
+    height: 422px;
+    border: 2px solid #003955;
+    color: #003955;
+}
+.np1{
+    position: relative;
+    top: -5px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.np1:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.np2 {
+    position: relative;
+    top: -20px;
+    left: 30px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.np2:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.np3{
+    position: relative;
+    top: -20px;
+    left: 60px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.np3:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.ver-mas{
+    position: relative;
+    width: 40px;
+    top: -245px;
+    left: 935px;
+}
+.ver-mas:hover{
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.50);
+}
+.precio{
+    background-color: #003955;
+    color: #fff;
+    position: relative;
+    left: 32%;
+    width: 100px;
+}
+
+.lo-mas-vendido{
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 5px;
+    top: -385px;
+    left: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 74%;
+    height: 422px;
+    border: 2px solid #003955;
+    color: #003955;
+}
+.lv1{
+    position: relative;
+    top: -5px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.lv1:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.lv2{
+    position: relative;
+    top: -10px;
+    left: 30px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 345px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.lv2 img{
+    padding: 5px;
+}
+.lv2:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.lv3{
+    position: relative;
+    top: -20px;
+    left: 60px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 345px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.lv3:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.monitores{
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 5px;
+    top: -453px;
+    left: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 74%;
+    height: 422px;
+    border: 2px solid #003955;
+    color: #003955;
+}
+.m1{
+    position: relative;
+    top: -5px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.m1:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.m2{
+    position: relative;
+    top: -5px;
+    left: 30px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 345px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.m2:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.m3{
+    position: relative;
+    top: -5px;
+    left: 60px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 345px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.m3:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.laptops{
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 5px;
+    top: -505px;
+    left: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 74%;
+    height: 422px;
+    border: 2px solid #003955;
+    color: #003955;
+}
+.l1{
+    position: relative;
+    top: -5px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.l1:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.l1 img{
+    padding-top: 10px;
+}
+.l2{
+    position: relative;
+    top: -4px;
+    left: 30px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 345px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.l2:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.l3{
+    position: relative;
+    top: -10px;
+    left: 60px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 344px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.l3:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.l3 img{
+    padding-top: 18px;
+}
+
+.perifericos{
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 5px;
+    top: -560px;
+    left: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 74%;
+    height: 422px;
+    border: 2px solid #003955;
+    color: #003955;
+}
+.p1{
+    position: relative;
+    top: -5px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.p1:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.p1 img{
+    padding-top: 10px;
+}
+.p2{
+    position: relative;
+    top: -6px;
+    left: 30px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 345px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.p2:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.p3{
+    position: relative;
+    top: -8px;
+    left: 60px;
+    padding-top: 2px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 344px;
+    border: 2px solid #003955;
+    border-radius: 10px;
+}
+.p3:hover{
+    border: 4px solid #003955;
+    background-image: url("Imágenes/FavAñadirCarrito.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.p3 img{
+    padding-top: 18px;
+}
+
+article{
+    height: 2212px;
+}
+
+.informacion {
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    height: auto;
+}
+
+.informacion p{
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.marcas{
+    padding: 20px;
+}
+
+.descargas{
+    cursor: pointer;
+}
+
+footer{
+    padding: 60px;
+    display: flex;
+    background-color: #003955;
+    color: #fff;
+}
+footer ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.subtitulo1 p{
+    border: #fff solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+}
+.subtitulo1{
+    position: relative;
+    top: -40px;
+    left: -30px;
+}
+.subtitulo2{
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+.subtitulo2 p{
+    border: #fff solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    width: 240px;
+}
+.subtitulo3{
+    position: relative;
+    top: -40px;
+    left: 70px;
+}
+.subtitulo3 p{
+    border: #fff solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+}
+.subtitulo4{
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+.subtitulo4 p{
+    border: #fff solid 2px;
+    border-radius: 20px;
+    text-align: center;
+    width: 180px;
+}
+.pago-online{
+    position: relative;
+    top: 20px;
+}
+.r2{
+    position: relative;
+    top: 5px;
+}
+hr{
+    position: relative;
+    top: 210px;
+    left: -1150px;
+    height: 2px;
+    width: 124%;
+    background-color: #CACACA;
+}
+.copyright p{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 210px;
+    left: -102.5%;
+    width: 1000px;
+}
