@@ -7,6 +7,17 @@ body{
     overflow-x: hidden;
 }
 
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+article{
+    top: 140px;
+}
+
 nav{
     height: 120px;
     background-color: #003955;
@@ -63,12 +74,12 @@ nav{
 
 .Usuario{
     position: relative;
-    display: inline;
+    display: inline-block; /*inline*/
     top: -220px;
     left: 1140px;
 }
 .Usuario p{
-    display: inline-flex;
+    display: inline-block; /*flex*/
     padding: 8px;
     position: relative;
     top: 20px;
@@ -82,15 +93,15 @@ nav{
 
 .Carrito{
     position: relative;
-    display: inline;
+    display: inline-block;
     top: -232px;
     left: 1095px;
 }
 .Carrito p{
-    display: inline-flex;
+    display: inline-block;
     padding: 8px;
     position: relative;
-    top: 25px;
+    top: 40px;
     left: -60px;
     border-radius: 10px;
     color: #000;
@@ -99,10 +110,17 @@ nav{
     font-size: 14px;
 }
 
+.menu-responsive{
+    display: none;
+}
+.categorias-responsive{
+    display: none;
+}
+
 .menu{
-    position: relative;
-    top: -310px;
-    left: 17px;
+    position: fixed; /*relative*/
+    top: 60px;
+    left: 290px;
 }
 .menu ul{
     padding: 5px;
@@ -116,13 +134,14 @@ nav{
 
 .menu ul li a{
     color: #fff;
-    display: block;
     padding: 36px;
     padding-right: 24px;
     text-decoration: none;
 }
 
 .categorias{
+    position: relative;
+    top: 120px;
     margin: 15px;
 }
 .categorias p{
@@ -141,7 +160,7 @@ nav{
     display: inline-block;
     padding-left: 35px;
     padding-top: 5px;
-    top: -315px;
+    top: -400px;
     left: 300px;
     background-color: #fff;
     border-radius: 15px;
@@ -221,7 +240,7 @@ nav{
     left: 935px;
 }
 .ver-mas:hover{
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.50);
+    transform: scale(1.2);
 }
 .precio{
     background-color: #003955;
@@ -236,7 +255,7 @@ nav{
     display: inline-block;
     padding-left: 35px;
     padding-top: 5px;
-    top: -385px;
+    top: -465px;
     left: 300px;
     background-color: #fff;
     border-radius: 15px;
@@ -319,7 +338,7 @@ nav{
     display: inline-block;
     padding-left: 35px;
     padding-top: 5px;
-    top: -453px;
+    top: -528px;
     left: 300px;
     background-color: #fff;
     border-radius: 15px;
@@ -399,7 +418,7 @@ nav{
     display: inline-block;
     padding-left: 35px;
     padding-top: 5px;
-    top: -505px;
+    top: -578px;
     left: 300px;
     background-color: #fff;
     border-radius: 15px;
@@ -485,7 +504,7 @@ nav{
     display: inline-block;
     padding-left: 35px;
     padding-top: 5px;
-    top: -560px;
+    top: -630px;
     left: 300px;
     background-color: #fff;
     border-radius: 15px;
@@ -571,7 +590,8 @@ article{
 }
 
 .informacion {
-    padding: 40px;
+    padding-top: 170px;
+    padding-bottom: 30px;
     text-align: center;
     margin: auto;
     height: auto;
@@ -582,6 +602,10 @@ article{
     text-align: center;
     margin: auto;
     padding: 10px;
+}
+
+.informacion-responsive{
+    display: none;
 }
 
 .marcas{
@@ -670,4 +694,241 @@ hr{
     top: 210px;
     left: -102.5%;
     width: 1000px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width:1250px){
+    .logo img{
+        width: 400px !important;
+        height: 70px !important;
+        left: -75px !important;
+    }
+    .telollevamosacasa{
+        top: -30px;
+        left: -15px;
+    }
+    .telollevamosacasa img{
+        width: 20px;
+        height: 20px;
+    }
+    .telollevamosacasa p{
+        font-size: 13px;
+    }
+    .buscar{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-responsive{
+        display: block;
+        position: relative;
+        top: -220px;
+        left: -30px;
+        text-align:right;
+    }
+    .menu-responsive ul{
+        display: none;
+    }
+    .menu-responsive ul.show{
+        display: block;
+        background-color: #003955;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 34px;
+    }
+    .menu-responsive ul.show li a b{
+        text-decoration: none;
+        color: #fff;
+    }
+    .categorias p{
+        display: none;
+    }
+    
+    .menu-categorias{
+        display: none;
+    }
+    .categorias-responsive{
+        display: block;
+    }
+    .categorias-responsive p{
+        display: block;
+        position: relative;
+        top: -15px;
+        left: -30px;
+        padding: 5px;
+        padding-left: 15px;
+        background-color: #fff;
+        width: 120%;
+    }
+    .categorias-responsive img{
+        position: relative;
+        top: -58px;
+        left: 105px;
+    }
+    .menu-categorias-responsive ul li{
+        display: none;
+    }
+    .menu-categorias-responsive {
+        display: inline-block;
+        position: relative;
+        top: -60px;
+        left: -52px;
+        width: 1000px;
+        height: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-align: left;
+        background-color: #fff;
+        color: black;
+    }
+    .menu-categorias-responsive ul.show1 li {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .nuevos-productos{
+        top: -170px;
+        left: 30px;
+    }
+    .np1{
+        left: -20px;
+        width: 265px;
+        border: none;
+    }
+    .np2{
+        display: none;
+    }
+    .np3{
+        display: none;
+    }
+    .ver-mas{
+        left: 220px;
+    }
+    
+    .lo-mas-vendido{
+        top: -220px;
+        left: 30px;
+    }
+    .lv1{
+        left: -25px;
+        border: none;
+    }
+    .lv2{
+        display: none;
+    }
+    .lv3{
+        display: none;
+    }
+
+    .monitores{
+        top: -260px;
+        left: 30px;
+    }
+    .m1{
+        left: -25px;
+        border: none;
+    }
+    .m2{
+        display: none;
+    }
+    .m3{
+        display: none;
+    }
+
+    .laptops{
+        top: -300px;
+        left: 30px;
+    }
+    .l1{
+        left: -25px;
+        border: none;
+    }
+    .l2{
+        display: none;        
+    }
+    .l3{
+       display: none; 
+    }
+
+    .perifericos{
+        top: -340px;
+        left: 30px;
+    }
+    .p1{
+        left: -25px;
+        border: none;
+    }
+    .p2{
+        display: none;
+    }
+    .p3{
+        display: none;
+    }
+    /*
+    .informacion p b{
+        position: relative;
+        display: block;
+        top: 50px;
+        left: 10px;
+        width: 350px !important;
+    }
+    .marcas{
+        display: none;
+    }*/
+
+    .informacion{
+        display: none;
+    }
+
+    .informacion-responsive{
+        display: block;
+        height: auto;
+        position: relative;
+        top: 200px;
+        padding-bottom: 220px;
+    }
+    .informacion-responsive p b{
+        position: relative;
+        display: block;
+        top: 0px;
+        left: 10px;
+        width: 350px;
+        text-align: center;
+    }
+    .descargas-responsive{
+        text-align: center;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    .subtitulo1{
+        left: 10px;
+    }
+    .subtitulo2{
+        left: 5%;
+    }
+    .subtitulo3{
+        left: 5%;
+    }
+    .subtitulo4{
+        left: 8%;
+    }
+    .copyright p{
+        display: block;
+        position: relative;
+        top: -40px;
+        left: 5px;
+        width: auto;
+        text-align: center;
+    }
 }
